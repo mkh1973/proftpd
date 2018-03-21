@@ -79,12 +79,14 @@ objects:
         #  - name: var
         #    emptyDir:
         #      medium: Memory
-#- kind: Secret
-#  apiVersion: v1
-#  metadata:
-#    name: secret-users
-#  data:
-#    custom.passwd: |
+- kind: Secret
+  apiVersion: v1
+  metadata:
+    name: secret-users
+  data:
+    custom.passwd: YWRhbTpkejdnYkUzd3FZUTd6YUtiNnNoLjE6MTAwMToxMDAxOjovZnRwL2FkYW06L2Jpbi9zaA==
+#      |
 #      adam:$1$dPvIFNX1$9dz7gbE3wqYQ7zaKb6sh.1:1001:1001::/ftp/adam:/bin/sh
-#    custom.group: |
+    custom.group: YWRhbTp4OjEwMDE6
+#      |
 #      adam:x:1001:
